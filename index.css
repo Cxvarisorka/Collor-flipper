@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+nav{
+    padding: 0 20px;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav{
+    width: 700px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav > p, #random-color{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    cursor: pointer;
+}
+#random-color:hover{
+    color: #49a6e9;
+}
+.main-nav > p:nth-child(1){
+    color: #49a6e9;
+}
+main > div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+main > div > p{
+    text-align: center;
+    background-color: #222222;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+}
+main > div > button{
+    width: 150px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: 1px solid #222222;
+    cursor: pointer;
+    color: #222222;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+main > div > button:hover{
+    background-color: #222222;
+    color: white;
+}
+
+
+
+@media (max-width: 500px){
+    html{
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 360px){
+    html{
+        font-size: 0.8em;
+    }
+    main > div > p{
+        font-size: 2rem;
+    }
+    main > div > button{
+        width: 120px;
+        height: 50px;
+    }
+}
+@media (max-width: 330px){
+    .main-nav{
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
